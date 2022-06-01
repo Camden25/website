@@ -1,0 +1,45 @@
+header {
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    right: 5px;
+    background-color: aquamarine;
+    outline: 6px solid cadetblue;
+}
+
+body {
+    padding-top: 128px;
+}
+
+.header_title {
+    font-family: 'Courier New';
+    font-size: 64px;
+    padding: 5px;
+}
+
+.navigation {
+    font-family: 'Courier New';
+    color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+.nav_button {
+    background-color: cornflowerblue;
+    font-size: 16px;
+    color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+.page_title {
+    position: fixed;
+    left: 5px;
+    top: 128px;
+    font-family: 'Courier New';
+    font-size: 128px;
+    font-weight: 500;
+    color: black;
+    padding: 5px;
+    text-align: left;
+}
