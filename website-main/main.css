@@ -3,43 +3,70 @@ header {
     left: 5px;
     top: 5px;
     right: 5px;
-    background-color: aquamarine;
-    outline: 6px solid cadetblue;
+    z-index: 100;
+    color: rgb(10, 10, 10);
+    background-color: slategrey;
+    outline: 6px solid rgb(20, 20, 30);
 }
 
 body {
-    padding-top: 128px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    margin-top: 96px;
+    margin-bottom: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: darkgrey;
+    background-color: rgb(10, 10, 10);
 }
 
 .header_title {
-    font-family: 'Courier New';
-    font-size: 64px;
+    width: 320px;
     padding: 5px;
+    font-family: 'Courier New';
+    font-size: 32px;
 }
 
 .navigation {
+    width: auto;
     font-family: 'Courier New';
-    color: black;
+    color: rgb(10, 10, 10);
     padding: 5px;
     text-align: center;
 }
 
 .nav_button {
-    background-color: cornflowerblue;
+    background-color: rgb(20, 80, 60);
     font-size: 16px;
-    color: black;
+    color: rgb(10, 10, 10);
     padding: 5px;
     text-align: center;
 }
 
 .page_title {
-    position: fixed;
-    left: 5px;
-    top: 128px;
+    position: relative;
+    height: 74px;
     font-family: 'Courier New';
-    font-size: 128px;
+    font-size: 64px;
     font-weight: 500;
-    color: black;
     padding: 5px;
     text-align: left;
+}
+
+.game_list {
+    position: relative;
+    padding: 5px;
+}
+
+.game_button{
+    position: relative;
+    width: 256px;
+    height: auto;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    float: left;
+    background: none;
 }
