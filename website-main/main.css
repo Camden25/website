@@ -1,72 +1,176 @@
-header {
-    position: fixed;
-    left: 5px;
-    top: 5px;
-    right: 5px;
-    z-index: 100;
-    color: rgb(10, 10, 10);
-    background-color: slategrey;
-    outline: 6px solid rgb(20, 20, 30);
-}
-
-body {
-    position: relative;
-    left: 5px;
-    top: 5px;
-    right: 5px;
-    bottom: 5px;
-    margin-top: 96px;
-    margin-bottom: 5px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    color: darkgrey;
-    background-color: rgb(10, 10, 10);
-}
-
-.header_title {
-    width: 320px;
-    padding: 5px;
-    font-family: 'Courier New';
-    font-size: 32px;
-}
-
-.navigation {
-    width: auto;
-    font-family: 'Courier New';
-    color: rgb(10, 10, 10);
-    padding: 5px;
+/* Created by Camden Martin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #1e1e1e;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  nav a {
+    color: #ffffff;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  .hero {
     text-align: center;
-}
-
-.nav_button {
-    background-color: rgb(20, 80, 60);
-    font-size: 16px;
-    color: rgb(10, 10, 10);
-    padding: 5px;
+    padding: 2rem;
+  }
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .project-card {
+    background-color: #2a2a2a;
+    padding: 1rem;
+    border-radius: 8px;
     text-align: center;
-}
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  .project-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    margin-top: 2rem;
+  }
+  
+/* Project Content Layout */
+.project-content {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: flex-start;
+  }
+  
+  .description {
+    flex: 3;  /* Gives more space to the description */
+    color: #e0e0e0;
+  }
+  
+  .screenshots {
+    flex: 1;  /* Keeps screenshots aligned to the right with less space */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .description h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
 
-.page_title {
-    position: relative;
-    height: 74px;
-    font-family: 'Courier New';
-    font-size: 64px;
-    font-weight: 500;
-    padding: 5px;
-    text-align: left;
-}
+  .description p {
+    margin-bottom: 0.5rem; /* Adjust the spacing as needed */
+  }
+  
+  .info-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .info-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #a0a0a0;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+  }
 
-.game_list {
-    position: relative;
-    padding: 5px;
-}
+  .intro {
+    font-size: 1rem;
+    font-style: italic;
+    color: #b0b0b0;
+    margin-bottom: 1.5rem;  /* Adds space after the intro */
+    padding: 0.5rem;
+    border-left: 3px solid #666;
+  }
 
-.game_button{
-    position: relative;
-    width: 256px;
-    height: auto;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    float: left;
-    background: none;
-}
+  .features-list, .tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .features-list li, .tech-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    color: #c0c0c0;
+  }
+  
+  .feature-icon, .tech-icon {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  
+  .screenshots img {
+    width: 100%;
+    max-width: 250px;
+    border: 2px solid #444;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .screenshots img:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .credits-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    color: #cccccc;
+  }
+  
+  .credits-section h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+  }
+  
+  .credits-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .credits-list li {
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+  }
+  
+  .credits-list strong {
+    color: #ffffff;
+  }
+  
