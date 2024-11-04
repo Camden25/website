@@ -59,7 +59,54 @@
     background-color: #1e1e1e;
     margin-top: 1rem;
   }
+    
   
+  /* Basic styling */
+.under-construction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.under-construction h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.under-construction p {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  margin-bottom: 1rem;
+}
+
+/* Animation styling */
+.construction-icon {
+  font-size: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.construction-icon span {
+  display: inline-block;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 /* Project Content Layout */
 .project-content {
     display: flex;
@@ -177,4 +224,3 @@
   .credits-list strong {
     color: #ffffff;
   }
-  
