@@ -54,10 +54,10 @@
     border-radius: 8px;
   }
   .footer {
-    text-align: center;
+    text-align: left;
     padding: 1rem;
     background-color: #1e1e1e;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   
 /* Project Content Layout */
@@ -143,7 +143,7 @@
     transform: scale(1.05);
   }
   
-  
+
   .credits-section {
     margin-top: 2rem;
     padding: 1.5rem;
@@ -160,6 +160,10 @@
     padding-bottom: 0.5rem;
   }
   
+  .credits-section a {
+    color: #cccccc;
+  }
+
   .credits-list {
     list-style-type: none;
     padding: 0;
