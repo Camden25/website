@@ -20,7 +20,7 @@
   </header>
 
   <section class="hero" id="projects">
-    <h2>Projects</h2>
+    <h1>Projects</h1>
   </section>
 
   <!-- Projects Section -->
@@ -50,13 +50,30 @@
         <h3>Leap of the Monk</h3>
         <p>Jump across precarious bamboo poles</p>
       </div>
+
+      <div class="project-card" onclick="openProjectDetails('WeatherApp/weather_app.html')">
+        <img src="WeatherApp/Cover.png" alt="Weather App Thumbnail">
+        <h3>Weather App</h3>
+        <p>A Python-based app to fetch and display weather data.</p>
+      </div>
+
+      <div class="project-card" onclick="openProjectDetails('GeometryProject/geometry_project.html')">
+        <img src="GeometryProject/Cover.png" alt="Geometry Project Thumbnail">
+        <h3>Geometry Project</h3>
+        <p>Showcasing real-world trigonometry with bullet spawning mechanics.</p>
+      </div>
       <!-- Add more project cards as needed -->
     </div>
   </section>
 
   <!-- Footer Section -->
   <footer class="footer">
-    <p>&copy; 2024 Camden Martin | All Rights Reserved</p>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <p>&copy; 2025 Camden Martin | All Rights Reserved</p>
+      <div>
+      <a href="https://github.com/your-github-username" target="_blank">GitHub</a> | <a href="https://your-itch-username.itch.io" target="_blank">Itch.io</a>
+      </div>
+    </div>
   </footer>
 
   <script src="main.js"></script>
